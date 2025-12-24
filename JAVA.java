@@ -1,14 +1,25 @@
-// Toggle mobile menu
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+const display = document.getElementById("display");
+const buttons = document.querySelectorAll("button");
 
-menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-});
+let currentInput = "";
 
-// Close menu when a link is clicked (for mobile)
-document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-        navLinks.classList.remove("show");
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        const value = button.textContent;
+
+        if (value === "C") {
+            currentInput = "";
+            display.value = "";
+        } else if (value === "=") {
+            try {
+                currentInput = eval(currentInput); // evaluate the expression
+                display.value = currentInput;
+            } catch {
+                display.value = "Error";
+            }
+        } else {
+            currentInput += value;
+            display.value = currentInput;
+        }
     });
 });

@@ -4,115 +4,40 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Basic Calculator</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- ===== Navbar ===== -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">MyPortfolio</div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-        </nav>
-    </header>
+    <div class="calculator">
+        <input type="text" class="display" id="display" disabled />
 
-    <!-- ===== Hero Section ===== -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="intro_heading">Hello, I'm <span class="highlight">Akriti Srivastav</span></h1>
-            <p>A passionate Web Developer & Designer</p>
-            <a href="#projects" class="btn">View My Work</a>
+        <div class="buttons">
+            <button class="clear">C</button>
+            <button>(</button>
+            <button>)</button>
+            <button class="operator">/</button>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">*</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">-</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">+</button>
+
+            <button>0</button>
+            <button>.</button>
+            <button class="equal">=</button>
         </div>
-    </section>
-
-    <!-- ===== About Section ===== -->
-    <section id="about" class="about">
-        <h2>ABOUT ME</h2>
-        <p class="about_me">
-            I'm a frontend developer passionate about crafting seamless,
-            interactive, and visually stunning user experiences. With a strong
-            foundation in HTML, CSS, and JavaScript, and a love for modern
-            frameworks like React and Vue.js, I thrive at the intersection of
-            design and functionality. My focus is on creating responsive, intuitive
-            interfaces that not only look great but solve real-world problems.
-            <br />
-            When I’m not coding, you’ll find me exploring the latest trends in web
-            development, experimenting with new tools, or collaborating with other
-            developers to push the boundaries of what’s possible online.
-        </p>
-    </section>
-
-    <!-- ===== Projects Section ===== -->
-    <section id="projects" class="projects">
-        <h2>PROJECTS</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3 class="project_name">Food Munch</h3>
-                <p class="project_description">
-                    Discover the world of food with this responsive website that showcases a
-                    comprehensive list of food items. </br>
-                    ● Designed with a user-centric approach, this website features HTML
-                    structure elements and Bootstrap
-                    components to ensure a seamless experience. </br>
-                    ● Get a closer look at the food items with product videos, available
-                    at the click of a button.
-                </p>
-                <a href="http://fooodies.ccbp.tech/">http://fooodies.ccbp.tech/</a>
-            </div>
-            <div class="project-card">
-                <h3 class="project_name">Todos Application</h3>
-                <p class="project_description">
-                    A comprehensive todo management tool designed to enhance productivity. </br>
-                    ● User-friendly interface with HTML, CSS, and Bootstrap for ease of use. </br>
-                    ● Effortless task management through JavaScript-based CRUD operations with
-                    dynamic UI updates. </br>
-                    ● Your tasks are always safe with local storage methods to ensure task persistence.
-                </p>
-                <a href="http://akrititodolist.ccbp.tech/">http://akrititodolist.ccbp.tech/</a>
-            </div>
-            <div class="project-card">
-                <h3 class="project_name">Typing Speed Test</h3>
-                <p class="project_description">
-                    A comprehensive typing speed assessment tool. </br>
-                    ● Employs advanced JavaScript techniques to fetch and display
-                    the paragraph, and track the timer. </br>
-                    ● Offers real-time results and form validation to ensure accuracy and completeness.
-                </p>
-                <a href="http://astypingspeed.ccbp.tech/">http://astypingspeed.ccbp.tech/</a>
-            </div>
-            <div class="project-card">
-                <h3 class="project_name">AI Avatar</h3>
-                <p class="project_description">
-                    This brings digital personas to life through real-time interaction. The avatar combines natural language
-                    processing, speech synthesis, and dynamic animations to simulate human-like conversation.
-                    Users can engage with the avatar for Q&A, personalized assistance, or entertainment, experiencing a blend
-                    of AI-driven personality and visual storytelling.
-                </p>
-                <a href="http://akritiaiavatar.ccbp.tech/">http://akritiaiavatar.ccbp.tech/</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== Contact Section ===== -->
-    <section id="contact" class="contact">
-        <h2>CONTACT ME</h2>
-        <p>Feel free to reach out via email or social media!</p>
-        <a href="mailto:akritisrivastav3061@gmail.com" target="_blank" class="btn">Email Me</a>
-        <a href="https://www.linkedin.com/in/akritisrivastav/" target="_blank" class="btn">linkedin</a>
-        <a href="https://github.com/akriti2712" target="_blank" class="btn">github</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 AKRITI SRIVASTAV | All Rights Reserved</p>
-    </footer>
-
+    </div>
     <script src="script.js"></script>
 </body>
 
