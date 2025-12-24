@@ -6,7 +6,7 @@ This project performs basic arithmetic operations and demonstrates fundamental f
 ---
 
 ## 🚀 Live Demo
-👉 'basiccalcolator.ccbp.tech'
+👉 https://basiccalcolator.ccbp.tech/
 
 ---
 
